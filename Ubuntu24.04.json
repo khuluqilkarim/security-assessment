@@ -1,0 +1,272 @@
+[
+    {
+        "Code": "CISCss211 ",
+        "Name": "Ensure autofs services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s autofs &>/dev/null && echo 'autofs is installed'"
+    },
+    {
+        "Code": "CISCss212",
+        "Name": "Ensure avahi daemon services are not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s avahi-daemon &>/dev/null && echo 'avahi-daemon is installed'"
+    },
+    {
+        "Code": "CISCss213",
+        "Name": "Ensure dhcp server services are not in use",
+        "Impact": 4,
+        "Likelihood": 2,
+        "RiskScore": 8,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s isc-dhcp-server &>/dev/null && echo 'isc-dhcp-server is installed'"
+    },
+    {
+        "Code": "CISCss214",
+        "Name": "Ensure dns server services are not in use",
+        "Impact": 5,
+        "Likelihood": 2,
+        "RiskScore": 10,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s bind9 &>/dev/null && echo 'bind9 is installed'"
+    },
+    {
+        "Code": "CISCss215",
+        "Name": "Ensure dnsmasq services are not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s dnsmasq &>/dev/null && echo 'dnsmasq is installed'"
+    },
+    {
+        "Code": "CISCss216",
+        "Name": "Ensure ftp server services are not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s vsftpd &>/dev/null && echo 'vsftpd is installed'"
+    },
+    {
+        "Code": "CISCss217",
+        "Name": "Ensure ldap server services are not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s slapd &>/dev/null && echo 'slapd is installed'"
+    },
+    {
+        "Code": "CISCss218",
+        "Name": "Ensure message access server services not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s dovecot-imapd &>/dev/null && echo 'dovecot-imapd is installed'"
+    },
+    {
+        "Code": "CISCss219",
+        "Name": "Ensure network file system services not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s nfs-kernel-server &>/dev/null && echo 'nfs-kernel-server is installed'"
+    },
+    {
+        "Code": "CISCss2110",
+        "Name": "Ensure nis server services are not in use",
+        "Impact": 4,
+        "Likelihood": 2,
+        "RiskScore": 8,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s ypserv &>/dev/null && echo 'ypserv is installed'"
+    },
+    {
+        "Code": "CISCss2111",
+        "Name": "Ensure print server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s cups &>/dev/null && echo 'cups is installed'"
+    },
+    {
+        "Code": "CISCss2112",
+        "Name": "Ensure rpcbind services are not in use",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s rpcbind &>/dev/null && echo 'rpcbind is installed'"
+    },
+    {
+        "Code": "CISCss2113",
+        "Name": "Ensure rsync services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s rsync &>/dev/null && echo 'rsync is installed'"
+    },
+    {
+        "Code": "CISCss2114",
+        "Name": "Ensure samba file server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s samba &>/dev/null && echo 'samba is installed'"
+    },
+    {
+        "Code": "CISCss2115",
+        "Name": "Ensure snmp services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s snmpd &>/dev/null && echo 'snmpd is installed'"
+    },
+    {
+        "Code": "CISCss2116",
+        "Name": "Ensure tftp server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s tftpd-hpa &>/dev/null && echo 'tftpd-hpa is installed'"
+    },
+    {
+        "Code": "CISCss2117",
+        "Name": "Ensure web proxy server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s squid &>/dev/null && echo 'squid is installed'"
+    },
+    {
+        "Code": "CISCss2118",
+        "Name": "Ensure web server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s apache2 &>/dev/null && echo 'apache2 is installed'"
+    },
+    {
+        "Code": "CISCss2119",
+        "Name": "Ensure xinetd services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s xinetd &>/dev/null && echo 'xinetd is installed'"
+    },
+    {
+        "Code": "CISCss2120",
+        "Name": "Ensure X window server services are not in use",
+        "Impact": 3,
+        "Likelihood": 3,
+        "RiskScore": 9,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s xserver-common &>/dev/null && echo 'xserver-common is installed'"
+    },
+    {
+        "Code": "CISCss2121",
+        "Name": "Ensure only approved services are listening on a network interface",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "ss -plntu"
+    },
+    {
+        "Code": "CISCcs221",
+        "Name": "Ensure NIS Client is not installed",
+        "Impact": 3,
+        "Likelihood": 2,
+        "RiskScore": 6,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s nis &>/dev/null && echo 'nis is installed'"
+    },
+    {
+        "Code": "CISCcs222",
+        "Name": "Ensure rsh client is not installed",
+        "Impact": 4,
+        "Likelihood": 2,
+        "RiskScore": 8,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -s rsh-client &>/dev/null && echo 'rsh-client is installed'"
+    },
+    {
+        "Code": "CISCcs223",
+        "Name": "Ensure talk client is not installed",
+        "Impact": 3,
+        "Likelihood": 2,
+        "RiskScore": 6,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s talk &>/dev/null && echo 'talk is installed'"
+    },
+    {
+        "Code": "CISCcs224",
+        "Name": "Ensure telnet client is not installed",
+        "Impact": 4,
+        "Likelihood": 3,
+        "RiskScore": 12,
+        "RiskRating": "High",
+        "Priority": "High",
+        "Audit": "dpkg-query -l | grep -E 'telnet|inetutils-telnet' &>/dev/null && echo 'telnet is installed'"
+    },
+    {
+        "Code": "CISCcs225",
+        "Name": "Ensure ldap client is not installed",
+        "Impact": 3,
+        "Likelihood": 2,
+        "RiskScore": 6,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -s ldap-utils &>/dev/null && echo 'ldap-utils is installed'"
+    },
+    {
+        "Code": "CISCcs226",
+        "Name": "Ensure ftp client is not installed",
+        "Impact": 3,
+        "Likelihood": 2,
+        "RiskScore": 6,
+        "RiskRating": "Medium",
+        "Priority": "Medium",
+        "Audit": "dpkg-query -l | grep -E 'ftp|tnftp' &>/dev/null && echo 'ftp is installed'"
+    },
+]
