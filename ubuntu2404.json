@@ -268,5 +268,5 @@
         "RiskRating": "Medium",
         "Priority": "Medium",
         "Audit": "dpkg-query -l | grep -E 'ftp|tnftp' &>/dev/null && echo 'ftp is installed'"
-    }
+    }=
 ]
